@@ -22,7 +22,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
   * THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but easy to workaround (Google the error, and if you find it I'll add it there because I don't remember by now)
   
-  * FOURTH WARNING: Java jdk 9 seems to cause problems with bazel, you may need to delete java and install an older version
+  * FOURTH WARNING: Java jdk 9 seems to cause problems with bazel, you may need to delete java and install an older version (THANKS Reda Boumahdi)
 
 
 4. Test with `python` // `>>> import tensorflow as tf`

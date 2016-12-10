@@ -5,9 +5,9 @@
 
 2 - Install NVIDIA drivers http://www.webupd8.org/2016/06/how-to-install-latest-nvidia-drivers-in.html
 
-	* Don't take the last version (take like 367) because it isn't stable yet.
+* Don't take the last version (take like 367) because it isn't stable yet.
 
-	* AT LEAST check with the command nvidia-smi: if not found, not good
+* AT LEAST check with the command nvidia-smi: if not found, not good
 
 
 3 - Follow tutorial here https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0-rc/

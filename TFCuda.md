@@ -34,7 +34,7 @@
 
   * Find `libcuda.so.367.57` (or the version of your NVIDIA driver) with `find / -iname "libcuda.so.1"`. It should appear at least in one folder apparently unrelated to CUDA, like `/usr/lib/i386-linux-gnu` or `/usr/lib/x86_64-linux-gnu/`. There you can also find the file `libcuda.367.57`.
 
-  * If it doesn't exit, try `sudo apt-get install libcuda1-367`
+  * If it doesn't exist, try `sudo apt-get install libcuda1-367`
 
   * Go to your `/usr/local/cuda/lib64` folder and create a symbolic link to the previous file: 
 	`sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.367.57 libcuda.so.1`

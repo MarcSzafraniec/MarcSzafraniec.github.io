@@ -1,7 +1,9 @@
+Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
+
 <h1 style="text-align:center";> Install Tensorflow with GPU support</h1>
 
 
-1. Delete previous TF installations from ALL dist-packages (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER)
+1. Delete previous TF installations from ALL `dist` (or `site`)`-packages`, like `/usr/lib/python2.7/dist-packages` (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER, for me was `/home/marc/anaconda3/lib/python3.5/site-packages`)
 
 2. Install NVIDIA drivers http://www.webupd8.org/2016/06/how-to-install-latest-nvidia-drivers-in.html
 

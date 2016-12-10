@@ -25,9 +25,10 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
   * FOURTH WARNING: Java jdk 9 seems to cause problems with bazel, you may need to delete java and install an older version (THANKS Reda Boumahdi)
   
    * FIFTH WARNING: If at step `./configure # tensorflow` you get
-	`Invalid SYCL 1.2 library path. /usr/local/computecpp/lib/libComputeCpp.so cannot be found` try https://www.codeplay.com/.../computes.../computecpp/download ```sudo mkdir /usr/local/computecpp
+	`Invalid SYCL 1.2 library path. /usr/local/computecpp/lib/libComputeCpp.so cannot be found` try https://www.codeplay.com/.../computes.../computecpp/download 
 	
-	sudo cp -r ComputeCpp-CE-0.1.1-Linux/lib/ /usr/local/computecpp/ (THANKS Aurélien Smith)```
+		sudo mkdir /usr/local/computecpp
+		sudo cp -r ComputeCpp-CE-0.1.1-Linux/lib/ /usr/local/computecpp/ (THANKS Aurélien Smith)
 
 
 4. Test with `python` // `>>> import tensorflow as tf`

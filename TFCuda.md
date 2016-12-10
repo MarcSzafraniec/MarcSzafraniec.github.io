@@ -1,4 +1,4 @@
-<h1><center> Install Tensorflow with GPU support</center></h1>
+<h1 style="text-align:center";> Install Tensorflow with GPU support</h1>
 
 1 - Delete previous TF installations from ALL dist-packages (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER)
 

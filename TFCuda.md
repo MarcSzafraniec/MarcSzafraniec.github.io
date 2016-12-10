@@ -23,6 +23,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
   * SECOND WARNING: the CUDNN Version to put in the configuration is `5` and not `5.1.5`)
 
   * THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but it usually is because YOU FORGOT TO HIT TAB
+  * By the way, at this step you need to use `pip install...` WITHOUT `sudo` if you use Anaconda. That is because the installation folder is different if you `sudo`. You can try `which python` and `sudo which python` to check that.
   
   * FOURTH WARNING: Java jdk 9 seems to cause problems with bazel, you may need to delete java and install an older version (THANKS Reda Boumahdi)
   

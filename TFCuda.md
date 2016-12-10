@@ -1,6 +1,10 @@
 <h1 style="text-align:center";> Install Tensorflow with GPU support</h1>
 
+
+
 1. Delete previous TF installations from ALL dist-packages (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER)
+
+
 
 
 2. Install NVIDIA drivers http://www.webupd8.org/2016/06/how-to-install-latest-nvidia-drivers-in.html
@@ -8,6 +12,8 @@
   * Don't take the last version (take like 367) because it isn't stable yet.
 
   * AT LEAST check with the command `nvidia-smi`: if not found, not good
+
+
 
 
 
@@ -21,6 +27,8 @@
 
 
 
+
+
 4. Test with `python` // `>>> import tensorflow as tf`
 
   * If that works, try `sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))`
@@ -28,6 +36,8 @@
   * It should display your GPU. If it doesn't, or if the previous command led to error messages, THAT becomes interesting. Go to step 5.
 
   * If you didn't get any error message but the GPU isn't there, you probably don't use the "right" TF, which means that you didn't clean up all folders before install. Try doing that, as well as installing NVIDIA drivers if it doesn't work
+
+
 
 
 5. You probably got a message like "Couldn't open CUDA library libcuda.so.1". It takes a few steps to solve this:
@@ -43,10 +53,16 @@
 
   * If the destination file already exists, delete it and retry
 
+
+
 6. That's where I won: FIREWORKS
 
 
+
+
 ---
+
+
 
 
 ## USEFUL LINKS:

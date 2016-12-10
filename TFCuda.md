@@ -7,7 +7,7 @@
 
   * Don't take the last version (take like 367) because it isn't stable yet.
 
-  * AT LEAST check with the command nvidia-smi: if not found, not good
+  * AT LEAST check with the command `nvidia-smi`: if not found, not good
 
 
 
@@ -15,15 +15,15 @@
 
   * WARNING: If python was installed with anaconda, make sure that the Python Path in TF configuration step are in the Anaconda Folder - was default for me
 
-  * SECOND WARNING: the CUDNN Version to put in the configuration is 5 and not 5.1.5)
+  * SECOND WARNING: the CUDNN Version to put in the configuration is `5` and not `5.1.5`)
 
   * THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but easy to workaround
 
 
 
-4. Test with python // >>> import tensorflow as tf
+4. Test with `python` // `>>> import tensorflow as tf`
 
-  * If that works, try sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+  * If that works, try `sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))`
 	
   * It should display your GPU. If it doesn't, or if the previous command led to error messages, THAT becomes interesting. Go to step 5.
 

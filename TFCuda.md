@@ -5,18 +5,18 @@
 
 2 - Install NVIDIA drivers http://www.webupd8.org/2016/06/how-to-install-latest-nvidia-drivers-in.html
 
-	Don't take the last version (take like 367) because it isn't stable yet.
+	* Don't take the last version (take like 367) because it isn't stable yet.
 
-	AT LEAST check with the command nvidia-smi: if not found, not good
+	* AT LEAST check with the command nvidia-smi: if not found, not good
 
 
 3 - Follow tutorial here https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0-rc/
 
-	- WARNING: If python was installed with anaconda, make sure that the Python Path in TF configuration step are in the Anaconda Folder - was default for me
+	* - WARNING: If python was installed with anaconda, make sure that the Python Path in TF configuration step are in the Anaconda Folder - was default for me
 
-	- SECOND WARNING: the CUDNN Version to put in the configuration is 5 and not 5.1.5)
+	* - SECOND WARNING: the CUDNN Version to put in the configuration is 5 and not 5.1.5)
 
-	- THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but easy to workaround
+	* - THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but easy to workaround
 
 
 4 - Test with python // >>> import tensorflow as tf

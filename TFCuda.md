@@ -40,6 +40,8 @@
 	`sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.367.57 libcuda.so.1`
 
   * If the destination file already exists, delete it and retry
+  
+  * Retry step 4
 
 6. That's where I won: FIREWORKS
 

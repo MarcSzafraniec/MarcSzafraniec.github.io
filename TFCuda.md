@@ -17,7 +17,7 @@
 
   * SECOND WARNING: the CUDNN Version to put in the configuration is `5` and not `5.1.5`)
 
-  * THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but easy to workaround
+  * THIRD WARNING: might get an error at the "Build & Install Pip Package" part, but easy to workaround (Google the error, and if you find it I'll add it there because I don't remember by now)
 
 
 
@@ -44,6 +44,9 @@
   * If the destination file already exists, delete it and retry
 
 6. That's where I won: FIREWORKS
+
+
+
 
 
 ## USEFUL LINKS:

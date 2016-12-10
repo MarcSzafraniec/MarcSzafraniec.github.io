@@ -5,7 +5,9 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
 1. Delete previous TF installations from ALL `dist` (or `site`)`-packages`, like `/usr/lib/python2.7/dist-packages` (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER, for me was `/home/marc/anaconda3/lib/python3.5/site-packages`)
 
-2. Install NVIDIA drivers https://blog.countableset.com/2016/08/27/ubuntu-install-nvidia-drivers/ (if you don't find PCI, don't worry)
+2. Install NVIDIA drivers https://blog.countableset.com/2016/08/27/ubuntu-install-nvidia-drivers/ (if you don't find PCI in the BIOS, don't worry)
+
+  * The last part (after "Special notes about full disk encryption") is only useful if you get bugs
 
   * Don't take the last version (take like 367) because it isn't stable yet.
 

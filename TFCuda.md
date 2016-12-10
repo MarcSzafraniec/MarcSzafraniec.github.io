@@ -60,6 +60,8 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
 6. That's where I won: FIREWORKS
 
+7. Another problem: If you have an error that talks about libcuda.so.6, try `sudo cp -p /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/vincent/anaconda3/lib/`
+
 
 ---
 

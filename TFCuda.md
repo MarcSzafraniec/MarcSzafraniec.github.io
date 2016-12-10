@@ -47,7 +47,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
   * Update `LD_LIBRARY_PATH`: `export LD_LIBRARY_PATH=/usr/local/cuda/lib64`
 
-  * Find `libcuda.so.367.57` (or the version of your NVIDIA driver) with `find / -iname "libcuda.so.1"`. It should appear at least in one folder apparently unrelated to CUDA, like `/usr/lib/i386-linux-gnu` or `/usr/lib/x86_64-linux-gnu/`. There you can also find the file `libcuda.367.57`.
+  * Find `libcuda.so.367.57` (or the version of your NVIDIA driver) with `sudo find / -iname "libcuda.so.1"`. It should appear at least in one folder apparently unrelated to CUDA, like `/usr/lib/i386-linux-gnu` or `/usr/lib/x86_64-linux-gnu/`. There you can also find the file `libcuda.367.57`.
 
   * If it doesn't exist, try `sudo apt-get install libcuda1-367`
 

@@ -11,11 +11,11 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
   * The last part (after "Special notes about full disk encryption") is only useful if you get bugs
 
-  * Don't take the last version (take like 367) because it isn't stable yet.
+  * Don't take the last version (Take 367 - it doesn't seem to work with later versions).
 
   * AT LEAST check with the command `nvidia-smi`: if not found, not good
   
-  * http://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely might be useful to get a clean install
+  * http://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely might be useful to get a clean install. I STRONGLY recommand to do it, especially if you had a previous installation.
 
 
 3. Follow tutorial here https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0-rc/

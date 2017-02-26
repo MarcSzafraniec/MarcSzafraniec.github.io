@@ -11,7 +11,6 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 1. Delete previous TF installations from ALL `dist` (or `site`)`-packages`, like `/usr/lib/python2.7/dist-packages` (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER, for me was `/home/marc/anaconda3/lib/python3.5/site-packages`)
 
 2. Install NVIDIA drivers <https://blog.countableset.com/2016/08/27/ubuntu-install-nvidia-drivers/> (if you don't find PCI in the BIOS, don't worry)
-
   * Then on the Ubuntu desktop click on parameters on the top right of the screen, "System Parameters", then "Software & Updates" and "Additional Drivers", then select the driver you just installed and "Apply Changes".
 
   * The last part (after "Special notes about full disk encryption") is only useful if you get bugs
@@ -24,7 +23,6 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
 
 3. Follow tutorial here <https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0-rc/>
-
   * WARNING: If python was installed with anaconda, make sure that the Python Path in TF configuration step are in the Anaconda Folder (and not what is told in the article) - was default for me 
 
   * SECOND WARNING: the CUDNN Version to put in the configuration is `5` and not `5.1.5`)
@@ -43,7 +41,6 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
   * SIXTH WARNING: Check the "Compute Capability" of your GPU on this page <https://developer.nvidia.com/cuda-gpus>. If it is not `3.5` or `5.2`, enter it (eg `3.0`) in the last `./configure` step. 
 
 4. Test with `python` // `>>> import tensorflow as tf`
- 
   * If that works, try `sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))`
 	
   * It should display your GPU. If it doesn't, or if `import tensorflow as tf` led to error messages, THAT becomes interesting. Go to step 5.
@@ -52,7 +49,6 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
 
 5. You probably got a message like "Couldn't open CUDA library libcuda.so.1". It takes a few steps to solve this:
- 
   * Update `LD_LIBRARY_PATH`: `export LD_LIBRARY_PATH=/usr/local/cuda/lib64`
 
   * Find `libcuda.so.367.57` (or the version of your NVIDIA driver) with `sudo find / -iname "libcuda.so.1"`. It should appear at least in one folder apparently unrelated to CUDA, like `/usr/lib/i386-linux-gnu` or `/usr/lib/x86_64-linux-gnu/`. There you can also find the file `libcuda.367.57`.
@@ -67,7 +63,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
   * Retry step 4
 
 6. That's where I won: FIREWORKS
- 
+
 7. Another problem: If you have an error that talks about libcuda.so.6, try `sudo cp -p /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/YOUR_USER_NAME/anaconda3/lib/`
  
 8. A solution is also on the Tensorflow website, which is basically the same, but some other bugs are adressed there: <https://www.tensorflow.org/get_started/os_setup#optional_install_cuda_gpus_on_linux>

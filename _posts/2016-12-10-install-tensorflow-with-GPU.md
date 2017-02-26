@@ -30,6 +30,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 		sudo mkdir /usr/local/computecpp
 		sudo cp -r ComputeCpp-CE-0.1.1-Linux/* /usr/local/computecpp/
 	```
+	
   * SIXTH WARNING: Check the "Compute Capability" of your GPU on this page <https://developer.nvidia.com/cuda-gpus>. If it is not `3.5` or `5.2`, enter it (eg `3.0`) in the last `./configure` step. 
   
 4. Test with `python` // `>>> import tensorflow as tf`

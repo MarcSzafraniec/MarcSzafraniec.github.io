@@ -11,7 +11,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 1. Delete previous TF installations from ALL `dist` (or `site`)`-packages`, like `/usr/lib/python2.7/dist-packages` (in Python 2 and/or Python 3, DON'T FORGET THE ANACONDA FOLDER, for me was `/home/marc/anaconda3/lib/python3.5/site-packages`)
 
 2. Install NVIDIA drivers <https://blog.countableset.com/2016/08/27/ubuntu-install-nvidia-drivers/> (if you don't find PCI in the BIOS, don't worry)
- 
+
   * Then on the Ubuntu desktop click on parameters on the top right of the screen, "System Parameters", then "Software & Updates" and "Additional Drivers", then select the driver you just installed and "Apply Changes".
 
   * The last part (after "Special notes about full disk encryption") is only useful if you get bugs
@@ -24,7 +24,7 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
 
 3. Follow tutorial here <https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0-rc/>
- 
+
   * WARNING: If python was installed with anaconda, make sure that the Python Path in TF configuration step are in the Anaconda Folder (and not what is told in the article) - was default for me 
 
   * SECOND WARNING: the CUDNN Version to put in the configuration is `5` and not `5.1.5`)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
-date: 2014-04-30
+title: "Install Tensorflow with GPU support"
+date: 2016-12-10
 ---
 Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 

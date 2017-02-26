@@ -20,13 +20,21 @@
 <body>
   
   <div class="wrapper">
+    <header>
       <h1 class="title">{{ site.title | default: site.github.repository_name }}</h1>
-        <ul>
+    </header>
+    <div id="container">
+      <p class="tagline">{{ site.description | default: site.github.project_tagline }}</p>
+      <div id="main" role="main">
+        <article class="markdown-body">
+          <ul>
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
         		<li><a href="/cv">CV</a></li>
         		<li><a href="/blog">Blog</a></li>
     		</ul>
+        </article>
+      </div>
     </div>
   
   

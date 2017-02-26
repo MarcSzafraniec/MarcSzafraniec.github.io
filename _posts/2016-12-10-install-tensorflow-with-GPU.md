@@ -12,13 +12,9 @@ Disclaimer: That works for Ubuntu 16.04, don't know for other versions.
 
 2. Install NVIDIA drivers <https://blog.countableset.com/2016/08/27/ubuntu-install-nvidia-drivers/> (if you don't find PCI in the BIOS, don't worry)
   * Then on the Ubuntu desktop click on parameters on the top right of the screen, "System Parameters", then "Software & Updates" and "Additional Drivers", then select the driver you just installed and "Apply Changes".
-
   * The last part (after "Special notes about full disk encryption") is only useful if you get bugs
-
   * Don't take the last version (Take 367 - it doesn't seem to work with later versions).
-
   * AT LEAST check with the command `nvidia-smi`: if not found, not good
-  
   * <http://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely> might be useful to get a clean install. I STRONGLY recommand to do it, especially if you had a previous installation.
 
 
